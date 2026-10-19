@@ -1,0 +1,13 @@
+# ChatGPT Custom Instructions Generator
+
+> Free browser tool that builds paste-ready ChatGPT custom instructions and Claude project instructions. No signup; nothing leaves your browser.
+
+- Primary use: generate a system / custom-instructions block from role, audience, tone, rules, and output format
+- Platforms: ChatGPT Custom Instructions, Custom GPT instructions, Claude Projects, Gemini system instructions
+- Soft product (optional): https://v8gt0i-12.myshopify.com/products/ai-bot-workflow-template-pack
+
+## Key facts
+
+- Free, no account, no API call
+- All formatting runs client-side in the browser
+- Live URL: https://system-prompt-builder.vercel.app/
