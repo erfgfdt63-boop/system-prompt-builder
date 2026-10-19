@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Free ChatGPT Custom Instructions Generator</title>
-  <meta name="description" content="Free ChatGPT custom instructions generator. Build paste-ready prompts for ChatGPT, Claude Projects, or Gemini — no signup, runs in your browser." />
+  <meta name="description" content="Free ChatGPT custom instructions generator — plus a Claude Project instructions mode. Paste-ready prompts, no signup, runs in your browser." />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
-  <meta name="keywords" content="chatgpt custom instructions generator, claude project instructions builder, free system prompt generator no signup, custom gpt instructions" />
+  <meta name="keywords" content="chatgpt custom instructions generator, claude project instructions generator, claude project instructions builder, free system prompt generator no signup" />
   <meta name="author" content="Omnigoods" />
   <link rel="canonical" href="https://system-prompt-builder.vercel.app/" />
   <meta property="og:title" content="Free ChatGPT Custom Instructions Generator" />
-  <meta property="og:description" content="Build paste-ready ChatGPT custom instructions (and Claude / Gemini system prompts) in your browser. Free, no signup." />
+  <meta property="og:description" content="Build paste-ready ChatGPT custom instructions or Claude Project instructions in your browser. Free, no signup." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://system-prompt-builder.vercel.app/" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="ChatGPT Custom Instructions Generator" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Free ChatGPT Custom Instructions Generator" />
-  <meta name="twitter:description" content="Fill a short form, copy a system prompt into ChatGPT Custom Instructions, Claude Projects, or Gemini. Runs in your browser." />
+  <meta name="twitter:description" content="Fill a short form, copy ChatGPT Custom Instructions or Claude Project instructions. Runs in your browser." />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -34,7 +34,7 @@
         "@id": "https://system-prompt-builder.vercel.app/#website",
         "url": "https://system-prompt-builder.vercel.app/",
         "name": "ChatGPT Custom Instructions Generator",
-        "description": "Free ChatGPT custom instructions generator and Claude project instructions builder. No signup; nothing leaves your browser.",
+        "description": "Free ChatGPT custom instructions generator and Claude project instructions generator. No signup; nothing leaves your browser.",
         "publisher": { "@id": "https://system-prompt-builder.vercel.app/#organization" },
         "inLanguage": "en"
       },
@@ -42,11 +42,17 @@
         "@type": "WebApplication",
         "@id": "https://system-prompt-builder.vercel.app/#app",
         "name": "ChatGPT Custom Instructions Generator",
+        "alternateName": ["Claude Project Instructions Generator", "System Prompt Builder"],
         "url": "https://system-prompt-builder.vercel.app/",
-        "description": "A free browser tool that turns role, audience, tone, rules, and output format into a paste-ready system prompt for ChatGPT Custom Instructions, Custom GPTs, Claude Project instructions, or Gemini.",
+        "description": "A free browser tool with two modes: ChatGPT Custom Instructions and Claude Project instructions. Fill a short form, copy a paste-ready block. No signup.",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any",
         "browserRequirements": "Requires a modern browser with JavaScript enabled",
+        "featureList": [
+          "ChatGPT Custom Instructions generator",
+          "Claude Project instructions generator",
+          "Browser-only, no signup"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -60,15 +66,15 @@
       {
         "@type": "HowTo",
         "@id": "https://system-prompt-builder.vercel.app/#howto",
-        "name": "How to use this ChatGPT custom instructions generator",
+        "name": "How to use this ChatGPT custom instructions / Claude Project generator",
         "description": "Build a paste-ready system prompt for ChatGPT Custom Instructions or Claude Project instructions in three steps.",
         "totalTime": "PT2M",
         "step": [
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Fill the fields",
-            "text": "Pick a preset or fill role, audience, tone, tasks, rules, and output format yourself."
+            "name": "Pick a mode",
+            "text": "Choose ChatGPT Custom Instructions or Claude Project Instructions, then pick a preset or fill the fields yourself."
           },
           {
             "@type": "HowToStep",
@@ -80,7 +86,7 @@
             "@type": "HowToStep",
             "position": 3,
             "name": "Paste into your AI tool",
-            "text": "Paste into ChatGPT Custom Instructions, a Custom GPT, Claude Project instructions, or your bot’s system message."
+            "text": "Paste into ChatGPT Custom Instructions, a Custom GPT, or Claude Project → Instructions → Save."
           }
         ]
       },
@@ -122,18 +128,26 @@
           },
           {
             "@type": "Question",
-            "name": "Can I use this as a Claude project instructions builder?",
+            "name": "How do I use the Claude Project instructions generator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Paste the same output into a Claude Project’s instructions field (or a Gemini system instruction). Shorten a few lines if the platform has a character limit."
+              "text": "Switch to the Claude Project Instructions tab. Fill project purpose, how Claude should behave, knowledge notes, and output preferences. Build, copy, then paste into your Claude Project → Instructions → Save. Upload files separately under Project knowledge."
             }
           },
           {
             "@type": "Question",
-            "name": "Does it work for Claude and Gemini too?",
+            "name": "Can I use this as a Claude project instructions builder?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The same text works as Claude Project instructions or a Gemini system instruction. Tweak wording if a platform has a character limit."
+              "text": "Yes. Use the dedicated Claude mode for a Project-shaped block, or paste a ChatGPT-mode output into Claude if you prefer. Shorten a few lines if you hit a character limit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work for Gemini too?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The ChatGPT-mode output also works as a Gemini system instruction. Tweak wording if a platform has a character limit."
             }
           },
           {
@@ -149,7 +163,7 @@
             "name": "How is this different from a generic AI prompt generator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It focuses on the system layer — role, audience, tone, rules, and output format — the block you set once so every chat starts consistent. Day-to-day user prompts still go in the chat box."
+              "text": "It focuses on the system layer — the block you set once so every chat starts consistent. Day-to-day user prompts still go in the chat box. Claude mode follows Project-style fields (purpose, behavior, knowledge, output)."
             }
           }
         ]
@@ -163,11 +177,11 @@
     <div class="wrap">
       <p class="eyebrow">Free browser tool · No signup · English</p>
       <h1>Free ChatGPT Custom Instructions Generator</h1>
-      <p class="lede">A free tool that turns role, audience, tone, and rules into a paste-ready system prompt for <strong>ChatGPT Custom Instructions</strong>, Custom GPTs, <strong>Claude Project instructions</strong>, or Gemini. Formatting only — no API call, no account, nothing leaves your browser.</p>
+      <p class="lede">Turn a short form into a paste-ready system prompt for <strong>ChatGPT Custom Instructions</strong> — or switch to <strong>Claude Project instructions</strong> mode. Formatting only: no API call, no account, nothing leaves your browser.</p>
       <ul class="entity-facts">
-        <li><strong>What it is:</strong> a ChatGPT custom instructions generator (also a Claude project instructions builder).</li>
-        <li><strong>Who it’s for:</strong> English-speaking solo founders and builders who rewrite the same “who you are” block every week.</li>
-        <li><strong>How it works:</strong> fill the form → Build prompt → Copy → paste into Settings or your Project.</li>
+        <li><strong>What it is:</strong> a ChatGPT custom instructions generator with a built-in Claude project instructions generator.</li>
+        <li><strong>Who it’s for:</strong> English-speaking solo founders who rewrite the same “who you are” block every week.</li>
+        <li><strong>How it works:</strong> pick a mode → fill the form → Build → Copy → paste into Settings or Project Instructions.</li>
       </ul>
     </div>
   </header>
@@ -176,7 +190,12 @@
     <section class="panel" aria-labelledby="form-heading">
       <h2 id="form-heading">Build your ChatGPT custom instructions</h2>
 
-      <div class="presets" role="group" aria-label="Quick presets">
+      <div class="mode-tabs" role="tablist" aria-label="Generator mode">
+        <button type="button" class="mode-tab is-active" role="tab" data-mode="chatgpt" aria-selected="true">ChatGPT Custom Instructions</button>
+        <button type="button" class="mode-tab" role="tab" data-mode="claude" aria-selected="false">Claude Project Instructions</button>
+      </div>
+
+      <div id="chatgpt-presets" class="presets" role="group" aria-label="ChatGPT quick presets">
         <span class="label">Presets</span>
         <button type="button" class="chip" data-preset="research">Research bot</button>
         <button type="button" class="chip" data-preset="support">Support bot</button>
@@ -184,40 +203,72 @@
         <button type="button" class="chip" data-preset="clear">Clear</button>
       </div>
 
-      <label>
-        Role / job
-        <input id="role" type="text" maxlength="200" placeholder="e.g. You are a research assistant for a one-person online store" />
-      </label>
+      <div id="claude-presets" class="presets" role="group" aria-label="Claude quick presets" hidden>
+        <span class="label">Presets</span>
+        <button type="button" class="chip" data-preset="research">Research project</button>
+        <button type="button" class="chip" data-preset="support">Support project</button>
+        <button type="button" class="chip" data-preset="content">Content project</button>
+        <button type="button" class="chip" data-preset="clear">Clear</button>
+      </div>
 
-      <label>
-        Audience
-        <input id="audience" type="text" maxlength="200" placeholder="e.g. Solo founders who sell digital products" />
-      </label>
+      <div id="chatgpt-form">
+        <label>
+          Role / job
+          <input id="role" type="text" maxlength="200" placeholder="e.g. You are a research assistant for a one-person online store" />
+        </label>
 
-      <label>
-        Tone
-        <select id="tone">
-          <option value="plain and direct">Plain and direct</option>
-          <option value="friendly but concise">Friendly but concise</option>
-          <option value="formal and precise">Formal and precise</option>
-          <option value="technical">Technical</option>
-        </select>
-      </label>
+        <label>
+          Audience
+          <input id="audience" type="text" maxlength="200" placeholder="e.g. Solo founders who sell digital products" />
+        </label>
 
-      <label>
-        What it should do
-        <textarea id="tasks" rows="4" maxlength="1200" placeholder="List the main jobs. One idea per line works well."></textarea>
-      </label>
+        <label>
+          Tone
+          <select id="tone">
+            <option value="plain and direct">Plain and direct</option>
+            <option value="friendly but concise">Friendly but concise</option>
+            <option value="formal and precise">Formal and precise</option>
+            <option value="technical">Technical</option>
+          </select>
+        </label>
 
-      <label>
-        Hard rules / constraints
-        <textarea id="rules" rows="4" maxlength="1200" placeholder="Things it must never do, or always do. e.g. Never invent prices. Ask before publishing."></textarea>
-      </label>
+        <label>
+          What it should do
+          <textarea id="tasks" rows="4" maxlength="1200" placeholder="List the main jobs. One idea per line works well."></textarea>
+        </label>
 
-      <label>
-        Output format
-        <textarea id="format" rows="3" maxlength="600" placeholder="e.g. Bullet points. Max 200 words. Include a one-line summary first."></textarea>
-      </label>
+        <label>
+          Hard rules / constraints
+          <textarea id="rules" rows="4" maxlength="1200" placeholder="Things it must never do, or always do. e.g. Never invent prices. Ask before publishing."></textarea>
+        </label>
+
+        <label>
+          Output format
+          <textarea id="format" rows="3" maxlength="600" placeholder="e.g. Bullet points. Max 200 words. Include a one-line summary first."></textarea>
+        </label>
+      </div>
+
+      <div id="claude-form" hidden>
+        <label>
+          Project purpose
+          <textarea id="claude-purpose" rows="3" maxlength="800" placeholder="What this Claude Project is for. e.g. Draft support replies for a small Shopify store selling digital downloads."></textarea>
+        </label>
+
+        <label>
+          How Claude should behave
+          <textarea id="claude-behavior" rows="4" maxlength="1200" placeholder="Role, tone, standing rules. One idea per line. e.g. Be short. Never invent tracking numbers. Ask one clarifying question when details are missing."></textarea>
+        </label>
+
+        <label>
+          Knowledge / context notes
+          <textarea id="claude-knowledge" rows="4" maxlength="1200" placeholder="What files or facts Claude should treat as source of truth. e.g. Use uploaded FAQ and policy docs. If files are silent, say so."></textarea>
+        </label>
+
+        <label>
+          Output preferences
+          <textarea id="claude-output" rows="3" maxlength="600" placeholder="Default shape of answers. e.g. Reply draft first, then a HUMAN GATE note. Bullets. No long preamble."></textarea>
+        </label>
+      </div>
 
       <div class="actions">
         <button type="button" id="build" class="primary">Build prompt</button>
@@ -229,18 +280,18 @@
     <section class="panel output-panel" aria-labelledby="output-heading">
       <h2 id="output-heading">Your paste-ready system prompt</h2>
       <textarea id="output" rows="22" readonly placeholder="Your prompt will appear here."></textarea>
-      <p class="hint">Tip: paste into ChatGPT → Settings → Personalization → Custom Instructions, or into a Claude Project / Custom GPT system field. Then send a short first message with the real task.</p>
+      <p id="output-hint" class="hint">Tip: paste into ChatGPT → Settings → Personalization → Custom Instructions, or into a Custom GPT system field. Then send a short first message with the real task.</p>
     </section>
   </main>
 
   <section class="wrap how" aria-labelledby="how-heading">
     <h2 id="how-heading">How to use this custom instructions generator</h2>
     <ol>
-      <li>Pick a preset or fill the fields yourself.</li>
+      <li>Pick <strong>ChatGPT Custom Instructions</strong> or <strong>Claude Project Instructions</strong>, then use a preset or fill the fields.</li>
       <li>Click <strong>Build prompt</strong>, then <strong>Copy</strong>.</li>
-      <li>Paste into ChatGPT Custom Instructions, a Custom GPT, Claude Project instructions, or your bot’s system message.</li>
+      <li>Paste into ChatGPT Custom Instructions, a Custom GPT, or Claude Project → Instructions → Save.</li>
     </ol>
-    <p>This is a formatting helper — a <strong>free system prompt generator with no signup</strong>, no API call, and no stored text. Use it whenever you need Claude project instructions or ChatGPT custom instructions without starting from a blank box.</p>
+    <p>This is a formatting helper — a <strong>free system prompt generator with no signup</strong>, no API call, and no stored text. Use the Claude tab whenever you need a <strong>claude project instructions generator</strong> without starting from a blank box.</p>
   </section>
 
   <section class="wrap faq" aria-labelledby="faq-heading">
@@ -262,12 +313,16 @@
       <p>Settings → Personalization → Custom Instructions (on mobile: Settings → Customize ChatGPT). You can also paste it into a Custom GPT’s instructions field.</p>
     </details>
     <details>
-      <summary>Can I use this as a Claude project instructions builder?</summary>
-      <p>Yes. Paste the same output into a Claude Project’s instructions field (or a Gemini system instruction). Shorten a few lines if the platform has a character limit.</p>
+      <summary>How do I use the Claude Project instructions generator?</summary>
+      <p>Switch to the <strong>Claude Project Instructions</strong> tab. Fill project purpose, how Claude should behave, knowledge notes, and output preferences. Build, copy, then paste into your Claude Project → Instructions → Save. Upload files separately under Project knowledge.</p>
     </details>
     <details>
-      <summary>Does it work for Claude and Gemini too?</summary>
-      <p>Yes. The same text works as Claude Project instructions or a Gemini system instruction. Tweak wording if a platform has a character limit.</p>
+      <summary>Can I use this as a Claude project instructions builder?</summary>
+      <p>Yes. Use the dedicated Claude mode for a Project-shaped block, or paste a ChatGPT-mode output into Claude if you prefer. Shorten a few lines if you hit a character limit.</p>
+    </details>
+    <details>
+      <summary>Does it work for Gemini too?</summary>
+      <p>Yes. The ChatGPT-mode output also works as a Gemini system instruction. Tweak wording if a platform has a character limit.</p>
     </details>
     <details>
       <summary>Is my text uploaded or saved?</summary>
@@ -275,7 +330,7 @@
     </details>
     <details>
       <summary>How is this different from a generic AI prompt generator?</summary>
-      <p>It focuses on the <em>system</em> layer — role, audience, tone, rules, and output format — the block you set once so every chat starts consistent. Day-to-day user prompts still go in the chat box.</p>
+      <p>It focuses on the <em>system</em> layer — the block you set once so every chat starts consistent. Day-to-day user prompts still go in the chat box. Claude mode follows Project-style fields (purpose, behavior, knowledge, output).</p>
     </details>
   </section>
 
