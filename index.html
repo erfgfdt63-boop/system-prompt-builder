@@ -3,32 +3,178 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free ChatGPT Custom Instructions Generator — Paste-Ready Prompt</title>
-  <meta name="description" content="Free ChatGPT custom instructions generator. Fill role, tone, and rules — get a paste-ready system prompt for ChatGPT, Claude Projects, or Gemini. No signup; nothing leaves your browser." />
-  <meta name="robots" content="index,follow" />
-  <meta name="keywords" content="chatgpt custom instructions generator, claude project instructions builder, free system prompt generator, custom gpt instructions" />
+  <title>Free ChatGPT Custom Instructions Generator</title>
+  <meta name="description" content="Free ChatGPT custom instructions generator. Build paste-ready prompts for ChatGPT, Claude Projects, or Gemini — no signup, runs in your browser." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
+  <meta name="keywords" content="chatgpt custom instructions generator, claude project instructions builder, free system prompt generator no signup, custom gpt instructions" />
+  <meta name="author" content="Omnigoods" />
   <link rel="canonical" href="https://system-prompt-builder.vercel.app/" />
   <meta property="og:title" content="Free ChatGPT Custom Instructions Generator" />
   <meta property="og:description" content="Build paste-ready ChatGPT custom instructions (and Claude / Gemini system prompts) in your browser. Free, no signup." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://system-prompt-builder.vercel.app/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="ChatGPT Custom Instructions Generator" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Free ChatGPT Custom Instructions Generator" />
   <meta name="twitter:description" content="Fill a short form, copy a system prompt into ChatGPT Custom Instructions, Claude Projects, or Gemini. Runs in your browser." />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://system-prompt-builder.vercel.app/#organization",
+        "name": "Omnigoods",
+        "url": "https://system-prompt-builder.vercel.app/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://system-prompt-builder.vercel.app/#website",
+        "url": "https://system-prompt-builder.vercel.app/",
+        "name": "ChatGPT Custom Instructions Generator",
+        "description": "Free ChatGPT custom instructions generator and Claude project instructions builder. No signup; nothing leaves your browser.",
+        "publisher": { "@id": "https://system-prompt-builder.vercel.app/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://system-prompt-builder.vercel.app/#app",
+        "name": "ChatGPT Custom Instructions Generator",
+        "url": "https://system-prompt-builder.vercel.app/",
+        "description": "A free browser tool that turns role, audience, tone, rules, and output format into a paste-ready system prompt for ChatGPT Custom Instructions, Custom GPTs, Claude Project instructions, or Gemini.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern browser with JavaScript enabled",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "publisher": { "@id": "https://system-prompt-builder.vercel.app/#organization" },
+        "creator": { "@id": "https://system-prompt-builder.vercel.app/#organization" }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://system-prompt-builder.vercel.app/#howto",
+        "name": "How to use this ChatGPT custom instructions generator",
+        "description": "Build a paste-ready system prompt for ChatGPT Custom Instructions or Claude Project instructions in three steps.",
+        "totalTime": "PT2M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Fill the fields",
+            "text": "Pick a preset or fill role, audience, tone, tasks, rules, and output format yourself."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Build and copy",
+            "text": "Click Build prompt, then Copy."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Paste into your AI tool",
+            "text": "Paste into ChatGPT Custom Instructions, a Custom GPT, Claude Project instructions, or your bot’s system message."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://system-prompt-builder.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this ChatGPT custom instructions generator free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. No account, no credits, no paywall. Open the page, fill the fields, copy the result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to sign up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This is a free system prompt generator with no signup. There is no login and no email capture — you use it in the browser and leave when you are done."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What’s the difference between ChatGPT custom instructions and a system prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are the same kind of text: a standing “who you are / how to answer” block that shapes every reply. ChatGPT stores it under Settings → Custom Instructions (or a Custom GPT’s instructions). Claude and many bots call the same block a system prompt or Project instructions. This tool writes that block once so you can paste it anywhere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I paste the output in ChatGPT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Settings → Personalization → Custom Instructions (on mobile: Settings → Customize ChatGPT). You can also paste it into a Custom GPT’s instructions field."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this as a Claude project instructions builder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Paste the same output into a Claude Project’s instructions field (or a Gemini system instruction). Shorten a few lines if the platform has a character limit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work for Claude and Gemini too?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The same text works as Claude Project instructions or a Gemini system instruction. Tweak wording if a platform has a character limit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my text uploaded or saved?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Everything runs in your browser. Close the tab and the text is gone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is this different from a generic AI prompt generator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It focuses on the system layer — role, audience, tone, rules, and output format — the block you set once so every chat starts consistent. Day-to-day user prompts still go in the chat box."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <p class="eyebrow">Free browser tool · English</p>
+      <p class="eyebrow">Free browser tool · No signup · English</p>
       <h1>Free ChatGPT Custom Instructions Generator</h1>
-      <p class="lede">Answer a few boxes about role, audience, tone, and rules. Get a clean system prompt you can paste into ChatGPT Custom Instructions, a Custom GPT, Claude Project instructions, or Gemini. Nothing leaves your browser.</p>
+      <p class="lede">A free tool that turns role, audience, tone, and rules into a paste-ready system prompt for <strong>ChatGPT Custom Instructions</strong>, Custom GPTs, <strong>Claude Project instructions</strong>, or Gemini. Formatting only — no API call, no account, nothing leaves your browser.</p>
+      <ul class="entity-facts">
+        <li><strong>What it is:</strong> a ChatGPT custom instructions generator (also a Claude project instructions builder).</li>
+        <li><strong>Who it’s for:</strong> English-speaking solo founders and builders who rewrite the same “who you are” block every week.</li>
+        <li><strong>How it works:</strong> fill the form → Build prompt → Copy → paste into Settings or your Project.</li>
+      </ul>
     </div>
   </header>
 
   <main class="wrap layout">
     <section class="panel" aria-labelledby="form-heading">
-      <h2 id="form-heading">Prompt inputs</h2>
+      <h2 id="form-heading">Build your ChatGPT custom instructions</h2>
 
       <div class="presets" role="group" aria-label="Quick presets">
         <span class="label">Presets</span>
@@ -81,31 +227,43 @@
     </section>
 
     <section class="panel output-panel" aria-labelledby="output-heading">
-      <h2 id="output-heading">Your system prompt</h2>
+      <h2 id="output-heading">Your paste-ready system prompt</h2>
       <textarea id="output" rows="22" readonly placeholder="Your prompt will appear here."></textarea>
       <p class="hint">Tip: paste into ChatGPT → Settings → Personalization → Custom Instructions, or into a Claude Project / Custom GPT system field. Then send a short first message with the real task.</p>
     </section>
   </main>
 
-  <section class="wrap how">
-    <h2>How to use this custom instructions generator</h2>
+  <section class="wrap how" aria-labelledby="how-heading">
+    <h2 id="how-heading">How to use this custom instructions generator</h2>
     <ol>
       <li>Pick a preset or fill the fields yourself.</li>
       <li>Click <strong>Build prompt</strong>, then <strong>Copy</strong>.</li>
       <li>Paste into ChatGPT Custom Instructions, a Custom GPT, Claude Project instructions, or your bot’s system message.</li>
     </ol>
-    <p>This is a formatting helper — a free system prompt generator with no API call and no stored text. Use it whenever you need Claude project instructions or ChatGPT custom instructions without starting from a blank box.</p>
+    <p>This is a formatting helper — a <strong>free system prompt generator with no signup</strong>, no API call, and no stored text. Use it whenever you need Claude project instructions or ChatGPT custom instructions without starting from a blank box.</p>
   </section>
 
   <section class="wrap faq" aria-labelledby="faq-heading">
     <h2 id="faq-heading">FAQ</h2>
-    <details>
+    <details open>
       <summary>Is this ChatGPT custom instructions generator free?</summary>
       <p>Yes. No account, no credits, no paywall. Open the page, fill the fields, copy the result.</p>
     </details>
     <details>
+      <summary>Do I need to sign up?</summary>
+      <p>No. This is a free system prompt generator with no signup. There is no login and no email capture — you use it in the browser and leave when you are done.</p>
+    </details>
+    <details>
+      <summary>What’s the difference between ChatGPT custom instructions and a system prompt?</summary>
+      <p>They are the same kind of text: a standing “who you are / how to answer” block that shapes every reply. ChatGPT stores it under Settings → Custom Instructions (or a Custom GPT’s instructions). Claude and many bots call the same block a system prompt or Project instructions. This tool writes that block once so you can paste it anywhere.</p>
+    </details>
+    <details>
       <summary>Where do I paste the output in ChatGPT?</summary>
       <p>Settings → Personalization → Custom Instructions (on mobile: Settings → Customize ChatGPT). You can also paste it into a Custom GPT’s instructions field.</p>
+    </details>
+    <details>
+      <summary>Can I use this as a Claude project instructions builder?</summary>
+      <p>Yes. Paste the same output into a Claude Project’s instructions field (or a Gemini system instruction). Shorten a few lines if the platform has a character limit.</p>
     </details>
     <details>
       <summary>Does it work for Claude and Gemini too?</summary>
@@ -123,7 +281,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>Built by Omnigoods</p>
+      <p>Built by <span itemprop="author">Omnigoods</span> · Updated 19 Oct 2026 (Hong Kong time)</p>
       <p class="soft-cta">Want ready-made bot roles, checklists, and follow-up scripts after you lock your instructions? <a href="https://v8gt0i-12.myshopify.com/products/ai-bot-workflow-template-pack">AI Bot Workflow Template Pack</a> — paid digital download.</p>
     </div>
   </footer>

@@ -1,4 +1,4 @@
-# Keyword pick (2026-10-19 refresh)
+# Keyword pick (2026-10-19 GEO pass)
 
 Google Trends Explore often returns HTTP 429 from this environment. Volume/KD below are from public SERP scans (2026-10) — not Keyword Planner exacts.
 
@@ -15,19 +15,37 @@ Google Trends Explore often returns HTTP 429 from this environment. Volume/KD be
 ## Locked primary (2026-10-19)
 
 - **Primary:** ChatGPT custom instructions generator  
-- **Title:** `Free ChatGPT Custom Instructions Generator — Paste-Ready Prompt`  
+- **Title (42 chars):** `Free ChatGPT Custom Instructions Generator`  
 - **H1:** `Free ChatGPT Custom Instructions Generator`  
-- **Meta:** Free ChatGPT custom instructions generator. Fill role, tone, and rules — get a paste-ready system prompt for ChatGPT, Claude Projects, or Gemini…  
+- **Meta (~144 chars):** Free ChatGPT custom instructions generator. Build paste-ready prompts for ChatGPT, Claude Projects, or Gemini — no signup, runs in your browser.  
 - **Secondaries:** Claude project instructions builder; free system prompt generator no signup  
 - **URL kept:** `system-prompt-builder.vercel.app` (no new domain; no new product)
 
-## On-page changes this round
+## On-page SEO (this GEO round)
 
-- Retitled title / H1 / og / twitter toward Custom Instructions intent  
-- Intro + how-to + hint copy mention ChatGPT Custom Instructions + Claude Projects  
-- Added FAQ block for GEO / citation-friendly answers  
-- Soft CTA wording softened further (no price, no hard sell)
+- Title ≤60 chars; meta ~144; H1/H2 aligned to primary + secondaries  
+- Form H2 → `Build your ChatGPT custom instructions`  
+- Output H2 → `Your paste-ready system prompt`  
+- Entity facts (what / who / how) in first screen HTML  
+- Canonical, og:locale, author meta kept/added  
+- Soft CTA unchanged (Shopify pack, no price in copy)
+
+## GEO checklist (done 2026-10-19 HKT)
+
+- [x] Clear entity in first screen (what / who for / how it works) — crawlable HTML  
+- [x] FAQPage JSON-LD mirroring visible FAQ (incl. custom instructions vs system prompt; no signup; Claude builder)  
+- [x] WebApplication JSON-LD (price 0; no fake ratings)  
+- [x] Organization + WebSite JSON-LD (`Omnigoods`)  
+- [x] HowTo JSON-LD matching visible 3-step list  
+- [x] Steps crawlable in HTML `<ol>` (not JS-only)  
+- [x] Main content server-rendered in `index.html`  
+- [x] Unique answer-style FAQ for real queries  
+- [x] Semantic H1/H2; no decorative images (N/A alt)  
+- [x] Canonical URL set  
+- [x] `robots.txt` allows GPTBot / PerplexityBot / ClaudeBot / Google-Extended  
+- [x] `llms.txt` added for agent discovery  
+- [x] Sitemap lastmod refreshed  
 
 ## Honest note
 
-A Vercel subdomain still ranks slowly without backlinks / Search Console. This round improves relevance for a lower-competition English query; it does not guarantee traffic. Monetization remains soft CTA → Shopify pack (HK$147).
+A Vercel subdomain still ranks slowly without backlinks / Search Console. JSON-LD + FAQ improve citation *readiness* for ChatGPT / Perplexity; they do not guarantee traffic or citations. Monetization remains soft CTA → Shopify pack (HK$147). No fake `aggregateRating`.
