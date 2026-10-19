@@ -1,22 +1,33 @@
-# Keyword pick (2026-10-13)
+# Keyword pick (2026-10-19 refresh)
 
-Google Trends Explore returned HTTP 429 from this environment, so volume/KD below are from public SERP + Semrush-cited competitor pages + tool-space scans — not exact Keyword Planner numbers.
+Google Trends Explore often returns HTTP 429 from this environment. Volume/KD below are from public SERP scans (2026-10) — not Keyword Planner exacts.
 
-## 3 candidates
+## Round-2 candidates (English market)
 
-| # | Keyword | Why | Soft-link to AI Bot Workflow Template Pack | Decision |
-|---|---------|-----|--------------------------------------------|----------|
-| 1 | **utm builder** | Proven demand (~12–18k/mo cited on competitor keyword tables). Classic free-tool SEO play. | Weak — campaign tracking only loosely ties to bot SOPs. | Rejected: head term crowded by GA/HubSpot-class pages; new `*.vercel.app` unlikely to rank soon. |
-| 2 | **system prompt builder** / **chatgpt system prompt generator** | Utility intent, English US, not sports/weather/news. Multiple indie tools exist (SERP not only mega-brands) → KD-feel lower than UTM. Runs fully offline. | **Strong** — pack is roles, prompts, checklists, follow-up scripts. Presets (research/support/content) mirror pack roles without hard-selling. | **LOCKED** |
-| 3 | **cron expression generator** / **crontab generator** | Evergreen developer utility, steady searches. | Weak — scheduling bots is a stretch to the pack. | Rejected: crowded + poor pack fit. |
+| # | Keyword | SERP feel | Soft-link to AI Bot Workflow Template Pack | Decision |
+|---|---------|-----------|--------------------------------------------|----------|
+| 1 | **system prompt builder** / **chatgpt system prompt generator** | Crowded: GetEasyPrompt, Stax.tools, FindSkill, 2prompt.app, Navid.me. Indie tools exist but head term is noisy for a fresh `*.vercel.app`. | Strong fit | **Demoted** from primary (keep as secondary / brand URL) |
+| 2 | **chatgpt custom instructions generator** | Intent = paste into Settings → Custom Instructions. Competitors exist (AI Academy, RUMO, Junia, niche ADHD builders) but fewer mega-brand utility pages than “system prompt builder”. Matches our form fields 1:1. | **Strong** — pack = roles, checklists, follow-ups after instructions are locked | **PRIMARY** |
+| 3 | **claude project instructions builder** | Lower head competition; Claude Projects users search for “instructions” / “system prompt”. | Strong | **Secondary** |
+| 4 | **free system prompt generator no signup** | Long-tail privacy intent; reinforces browser-only story. | Medium | **Secondary** |
+| 5 | **utm builder** / **cron expression generator** | High volume utilities | Weak pack fit | Still rejected |
 
-## Locked primary
+## Locked primary (2026-10-19)
 
-- **Primary:** System Prompt Builder  
-- **Title / H1 target:** `System Prompt Builder — Free Online Tool`  
-- **Meta description target:** Build a clear ChatGPT, Claude, or custom GPT system prompt in your browser…  
-- **Avoided:** UUID generator (CloudHu’s exact example), sports/weather/politics/news.
+- **Primary:** ChatGPT custom instructions generator  
+- **Title:** `Free ChatGPT Custom Instructions Generator — Paste-Ready Prompt`  
+- **H1:** `Free ChatGPT Custom Instructions Generator`  
+- **Meta:** Free ChatGPT custom instructions generator. Fill role, tone, and rules — get a paste-ready system prompt for ChatGPT, Claude Projects, or Gemini…  
+- **Secondaries:** Claude project instructions builder; free system prompt generator no signup  
+- **URL kept:** `system-prompt-builder.vercel.app` (no new domain; no new product)
+
+## On-page changes this round
+
+- Retitled title / H1 / og / twitter toward Custom Instructions intent  
+- Intro + how-to + hint copy mention ChatGPT Custom Instructions + Claude Projects  
+- Added FAQ block for GEO / citation-friendly answers  
+- Soft CTA wording softened further (no price, no hard sell)
 
 ## Honest note
 
-This drill alone rarely produces revenue. Traffic to a brand-new Vercel subdomain is slow without backlinks or Search Console verification. Soft CTA to the pack is the only monetization path implemented.
+A Vercel subdomain still ranks slowly without backlinks / Search Console. This round improves relevance for a lower-competition English query; it does not guarantee traffic. Monetization remains soft CTA → Shopify pack (HK$147).

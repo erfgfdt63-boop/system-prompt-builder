@@ -8,10 +8,12 @@ A single-page English utility: fill role / audience / tone / tasks / rules / out
 
 **Local path:** `/workspace/deliverables/ai-tool-site/`
 
-## Keyword (locked)
+## Keyword (locked 2026-10-19)
 
-Primary: **system prompt builder** (also covers “chatgpt system prompt generator”).  
-See `KEYWORD.md` for the 3-candidate comparison and why UTM / cron were not chosen.
+Primary: **chatgpt custom instructions generator**  
+Secondaries: **claude project instructions builder**, **free system prompt generator no signup**  
+(Former primary “system prompt builder” demoted — SERP crowded.)  
+See `KEYWORD.md` for the round-2 comparison.
 
 ## Run locally
 
