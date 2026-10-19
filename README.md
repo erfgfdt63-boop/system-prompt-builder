@@ -1,6 +1,6 @@
 # System Prompt Builder (Omnigoods free tool)
 
-A single-page English utility: fill role / audience / tone / tasks / rules / output format → get a copy-ready **system prompt** for ChatGPT, Claude, Gemini, or custom GPTs.
+A single-page English utility with two modes: **ChatGPT Custom Instructions** (role / audience / tone / tasks / rules / format) and **Claude Project Instructions** (purpose / behavior / knowledge / output). Copy a paste-ready block for ChatGPT, Claude Projects, Gemini, or custom GPTs.
 
 - Pure HTML + CSS + JS (no build step, no npm required)
 - Runs entirely in the browser — no tracking scripts, nothing uploaded
@@ -10,8 +10,8 @@ A single-page English utility: fill role / audience / tone / tasks / rules / out
 
 ## Keyword (locked 2026-10-19)
 
-Primary: **chatgpt custom instructions generator**  
-Secondaries: **claude project instructions builder**, **free system prompt generator no signup**  
+Primary: **chatgpt custom instructions generator** (default title/H1)  
+Secondaries: **claude project instructions generator**, **claude project instructions builder**, **free system prompt generator no signup**  
 (Former primary “system prompt builder” demoted — SERP crowded.)  
 See `KEYWORD.md` for the round-2 comparison.
 
